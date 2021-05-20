@@ -22,8 +22,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f1c7d757fb41c4eadd1b8796b5c225b4" translatesAutoresizingMaskIntoConstraints="NO" id="xTr-qL-vcx">
-                                <rect key="frame" x="51" y="119.5" width="312" height="639"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f1c7d757fb41c4eadd1b8796b5c225b4" translatesAutoresizingMaskIntoConstraints="NO" id="xTr-qL-vcx">
+                                <rect key="frame" x="51" y="119.5" width="312" height="323"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="323" id="eYO-ae-UpM"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -32,6 +35,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xTr-qL-vcx" secondAttribute="trailing" constant="51" id="4kc-sf-K8r"/>
                             <constraint firstItem="xTr-qL-vcx" firstAttribute="top" secondItem="hKc-Bi-CSE" secondAttribute="bottom" constant="10" id="7Ti-qT-Mua"/>
                             <constraint firstItem="hKc-Bi-CSE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="CCy-Ku-lZu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xTr-qL-vcx" secondAttribute="trailing" priority="999" constant="40" id="Ipn-CR-XqW"/>
                             <constraint firstItem="hKc-Bi-CSE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="Ulj-A2-DT4"/>
                             <constraint firstItem="xTr-qL-vcx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="XkC-XG-2AF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hKc-Bi-CSE" secondAttribute="trailing" constant="87" id="ezF-2i-mgS"/>
