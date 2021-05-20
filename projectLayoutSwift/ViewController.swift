@@ -25,9 +25,15 @@ class ViewController: UIViewController {
         let myButton = UIButton()
         myButton.setTitle("my first code button", for: UIControl.State.normal)
         myButton.setTitleColor(UIColor.blue, for: UIControl.State.normal)
-        myButton.frame = CGRect(x: width * 0.7, y: height * 0.7, width: 200, height: 100)
+        myButton.frame = CGRect(x: width * 0.5 - 100, y: height * 0.6, width: 200, height: 100)
         view.addSubview(myButton)
         
+        myButton.addTarget(self, action: #selector(ViewController.myAction), for: <#T##UIControl.Event#>)
+        
+    }
+    
+    @objc func myAction() {
+        print("first function")
     }
 
 
